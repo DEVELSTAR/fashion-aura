@@ -9,41 +9,54 @@
       content="Discover the latest trends in women's fashion at FashionAura. Shop denims, tops, dresses and more."
     />
     <link rel="stylesheet" href="style.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body>
-    <div class="top-bar">
-        Pay Day Just Got Better! UP TO 50% OFF* + Buy 2 get Addl 10% off ! ➡️ <a href="#">Visit now</a>
-    </div>
-
     <header>
-        <div class="logo-container">
-            <div class="logo">Fashion Aurah</div>
+        <div class="top-bar blinking">
+            Limited Time Offer! Flat 60% OFF on all brands + Extra 10% OFF on 2 items ➡️ <a href="#">Visit now</a>
         </div>
-        <nav class="sub-nav">
-            <a href="#">All Products</a>
-            <a href="#">New In</a>
-            <a href="#">Travel Edit</a>
-            <a href="#">Denim</a>
-            <a href="#">Tops</a>
-            <a href="#">Shirts</a>
-            <a href="#">Dresses</a>
-            <a href="#">Co-ords</a>
-            <a href="#">Sale</a>
-            <a href="#">Track My Order</a>
-        </nav>
+        <div class="header-main">
+            <div class="logo-container">
+                <div class="logo"><span class="fashion">Fashion</span> <span class="aurah">Aurah</span></div>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="menuToggle">
+                <i data-lucide="menu"></i>
+            </button>
+
+            <nav class="sub-nav" id="subNav">
+                <button class="menu-close" id="menuClose">
+                    <i data-lucide="x"></i>
+                </button>
+                <a href="#">All Products</a>
+                <a href="#">New Arrival</a>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+            </nav>
+        </div>
     </header>
 
     <main>
       <!-- Hero Slider Section -->
       <section class="hero">
             <div class="slider-container" id="heroSlider">
-                <div class="slide"><img src="assets/1.png" alt="FashionAura Style 1"></div>
-                <div class="slide"><img src="assets/2.png" alt="FashionAura Style 2"></div>
-                <div class="slide"><img src="assets/3.png" alt="FashionAura Style 3"></div>
-                <div class="slide"><img src="assets/4.png" alt="FashionAura Style 4"></div>
+                <div class="slide"><img src="assets/1.jpg" alt="Trendy Denim Collection"></div>
+                <div class="slide"><img src="assets/2.jpg" alt="Luxury Men's Apparel"></div>
+                <div class="slide"><img src="assets/3.jpg" alt="Elegant Women's Wear"></div>
+                <div class="slide"><img src="assets/5.jpg" alt="Playful Kids' Fashion"></div>
+                <div class="slide"><img src="assets/6.jpg" alt="Modern Street Style"></div>
+                <div class="slide slide7"><img src="assets/7.jpg" alt="Modern Street Style"></div>
+                <div class="slide"><img src="assets/8.jpg" alt="Modern Street Style"></div>
+                <div class="slide slide9"><img src="assets/9.jpg" alt="Modern Street Style"></div>
+                <div class="slide slide10"><img src="assets/10.jpg" alt="Modern Street Style"></div>
             </div>
+
             <div class="hero-overlay">
                 <div class="hero-content">
                     <h1>Everything Denim</h1>
@@ -56,25 +69,6 @@
       <!-- Promo Icons -->
       <section class="promo-icons">
         <div class="promo-item">
-          <i data-lucide="scissors"></i>
-          <p>
-            Free Alterations <br />
-            at Stores
-          </p>
-        </div>
-        <div class="promo-item">
-          <i data-lucide="rotate-ccw"></i>
-          <p>
-            15 Days <br />
-            Returns
-          </p>
-        </div>
-        <div class="promo-item">
-          <i data-lucide="truck"></i>
-          <p>
-            Free Shipping <br />
-            Above ₹2499
-          </p>
         </div>
       </section>
 
@@ -82,89 +76,349 @@
       <section class="brands">
         <h2>Explore More Brands</h2>
         <div class="brand-grid">
-          <div class="brand-item">VERO MODA</div>
-          <div class="brand-item">JACK & JONES</div>
-          <div class="brand-item">SELECTED</div>
-          <div class="brand-item">ONLY</div>
-          <div class="brand-item">VILLA</div>
+          <div class="brand-item">Tommy Hilfiger</div>
+          <div class="brand-item">Nike</div>
+          <div class="brand-item">Zara</div>
+          <div class="brand-item">Dior</div>
+          <div class="brand-item">Gucci</div>
+          <div class="brand-item">Adidas</div>
+          <div class="brand-item">H&M</div>
+          <div class="brand-item">Uniqlo</div>
         </div>
       </section>
 
       <!-- Product Grid -->
       <section class="products">
-        <h2 class="section-title">First on FashionAura</h2>
-        <div class="product-grid">
-          <!-- Product 1 -->
-          <article class="product-card">
-            <div class="product-image">
-              <img src="assets/product1.png" alt="Slim Fit Cropped T-Shirt" />
+        <h2 class="section-title">Gallery</h2>
+        <div class="product-gallery">
+          <!-- Group 1 -->
+          <div class="gallery-group" id="group1">
+            <div class="product-grid">
+              <article class="product-card" data-category="men">
+                <div class="product-image"><img src="https://loremflickr.com/400/500/men,fashion/all?lock=10" alt="Men's Collection"></div>
+                <div class="product-info">
+                  <h3>Men's Premium Shirt</h3>
+                  <p class="product-price">
+                    <span class="discounted-price">₹ 1,299</span>
+                    <span class="original-price">₹ 3,249</span>
+                    <span class="discount-badge">60% OFF</span>
+                  </p>
+                </div>
+              </article>
+              <article class="product-card" data-category="women">
+                <div class="product-image"><img src="https://loremflickr.com/400/500/women,fashion/all?lock=11" alt="Women's Collection"></div>
+                <div class="product-info">
+                  <h3>Women's Floral Dress</h3>
+                  <p class="product-price">
+                    <span class="discounted-price">₹ 1,899</span>
+                    <span class="original-price">₹ 4,749</span>
+                    <span class="discount-badge">60% OFF</span>
+                  </p>
+                </div>
+              </article>
+              <article class="product-card" data-category="kids">
+                <div class="product-image"><img src="https://loremflickr.com/400/500/kids,clothing/all?lock=14" alt="Kids' Collection"></div>
+                <div class="product-info">
+                  <h3>Kids' Denim Set</h3>
+                  <p class="product-price">
+                    <span class="discounted-price">₹ 999</span>
+                    <span class="original-price">₹ 2,499</span>
+                    <span class="discount-badge">60% OFF</span>
+                  </p>
+                </div>
+              </article>
+              <article class="product-card" data-category="men">
+                <div class="product-image"><img src="https://loremflickr.com/400/500/men,apparel/all?lock=19" alt="Men's Style"></div>
+                <div class="product-info">
+                  <h3>Classic Blue Jeans</h3>
+                  <p class="product-price">
+                    <span class="discounted-price">₹ 2,199</span>
+                    <span class="original-price">₹ 5,499</span>
+                    <span class="discount-badge">60% OFF</span>
+                  </p>
+                </div>
+              </article>
+              <article class="product-card" data-category="women">
+                <div class="product-image"><img src="https://loremflickr.com/400/500/women,clothes/all?lock=14" alt="Women's Style"></div>
+                <div class="product-info">
+                  <h3>Casual Summer Top</h3>
+                  <p class="product-price">
+                    <span class="discounted-price">₹ 799</span>
+                    <span class="original-price">₹ 1,999</span>
+                    <span class="discount-badge">60% OFF</span>
+                  </p>
+                </div>
+              </article>
+              <article class="product-card" data-category="kids">
+                <div class="product-image"><img src="https://loremflickr.com/400/500/kids,fashion/all?lock=19" alt="Kids' Style"></div>
+                <div class="product-info">
+                  <h3>Cotton T-Shirt Pack</h3>
+                  <p class="product-price">
+                    <span class="discounted-price">₹ 1,199</span>
+                    <span class="original-price">₹ 2,999</span>
+                    <span class="discount-badge">60% OFF</span>
+                  </p>
+                </div>
+              </article>
             </div>
-            <div class="product-info">
-              <h3>Slim Fit Cropped T-Shirt</h3>
-              <p class="product-price">₹ 999</p>
-            </div>
-          </article>
+            <button class="view-more-btn" onclick="showNextGroup('group2', this)">View More</button>
+          </div>
 
-          <!-- Product 2 -->
-          <article class="product-card">
-            <div class="product-image">
-              <img src="assets/product2.png" alt="Basic Snug Cropped T-Shirt" />
+          <!-- Group 2 -->
+          <div class="gallery-group hidden" id="group2">
+            <div class="product-grid">
+              <article class="product-card" data-category="men">
+                <div class="product-image"><img src="https://loremflickr.com/400/500/men,jacket/all?lock=20" alt="Men's Jacket"></div>
+                <div class="product-info">
+                  <h3>Rugged Denim Jacket</h3>
+                  <p class="product-price">
+                    <span class="discounted-price">₹ 3,499</span>
+                    <span class="original-price">₹ 8,749</span>
+                    <span class="discount-badge">60% OFF</span>
+                  </p>
+                </div>
+              </article>
+              <article class="product-card" data-category="women">
+                <div class="product-image"><img src="https://loremflickr.com/400/500/women,handbag/all?lock=21" alt="Women's Accessories"></div>
+                <div class="product-info">
+                  <h3>Designer Handbag</h3>
+                  <p class="product-price">
+                    <span class="discounted-price">₹ 2,799</span>
+                    <span class="original-price">₹ 6,999</span>
+                    <span class="discount-badge">60% OFF</span>
+                  </p>
+                </div>
+              </article>
+              <article class="product-card" data-category="kids">
+                <div class="product-image"><img src="https://loremflickr.com/400/500/kids,shoes/all?lock=22" alt="Kids' Footwear"></div>
+                <div class="product-info">
+                  <h3>Sporty Sneakers</h3>
+                  <p class="product-price">
+                    <span class="discounted-price">₹ 1,599</span>
+                    <span class="original-price">₹ 3,999</span>
+                    <span class="discount-badge">60% OFF</span>
+                  </p>
+                </div>
+              </article>
+              <article class="product-card" data-category="men">
+                <div class="product-image"><img src="https://loremflickr.com/400/500/men,trousers/all?lock=23" alt="Men's Formal"></div>
+                <div class="product-info">
+                  <h3>Slim Fit Trousers</h3>
+                  <p class="product-price">
+                    <span class="discounted-price">₹ 1,999</span>
+                    <span class="original-price">₹ 4,999</span>
+                    <span class="discount-badge">60% OFF</span>
+                  </p>
+                </div>
+              </article>
+              <article class="product-card" data-category="women">
+                <div class="product-image"><img src="https://loremflickr.com/400/500/women,activewear/all?lock=44" alt="Women's Activewear"></div>
+                <div class="product-info">
+                  <h3>Stretch Yoga Pants</h3>
+                  <p class="product-price">
+                    <span class="discounted-price">₹ 1,499</span>
+                    <span class="original-price">₹ 3,749</span>
+                    <span class="discount-badge">60% OFF</span>
+                  </p>
+                </div>
+              </article>
+              <article class="product-card" data-category="kids">
+                <div class="product-image"><img src="https://loremflickr.com/400/500/kids,jacket/all?lock=25" alt="Kids' Outerwear"></div>
+                <div class="product-info">
+                  <h3>Winter Puffer Jacket</h3>
+                  <p class="product-price">
+                    <span class="discounted-price">₹ 2,899</span>
+                    <span class="original-price">₹ 7,249</span>
+                    <span class="discount-badge">60% OFF</span>
+                  </p>
+                </div>
+              </article>
             </div>
-            <div class="product-info">
-              <h3>Basic Snug Cropped T-Shirt</h3>
-              <p class="product-price">₹ 799</p>
-            </div>
-          </article>
+            <button class="view-more-btn" onclick="showNextGroup('group3', this)">View More</button>
+          </div>
 
-          <!-- Product 3 -->
-          <article class="product-card">
-            <div class="product-image">
-              <img
-                src="assets/product3.png"
-                alt="High Rise Straight Fit Jeans"
-              />
+          <!-- Group 3 -->
+          <div class="gallery-group hidden" id="group3">
+            <div class="product-grid">
+              <article class="product-card" data-category="men">
+                <div class="product-image"><img src="https://loremflickr.com/400/500/men,wallet/all?lock=30" alt="Men's Accessories"></div>
+                <div class="product-info">
+                  <h3>Leather Wallet</h3>
+                  <p class="product-price">
+                    <span class="discounted-price">₹ 1,099</span>
+                    <span class="original-price">₹ 2,749</span>
+                    <span class="discount-badge">60% OFF</span>
+                  </p>
+                </div>
+              </article>
+              <article class="product-card" data-category="women">
+                <div class="product-image"><img src="https://loremflickr.com/400/500/women,evening,top/all?lock=77" alt="Women's Partywear"></div>
+                <div class="product-info">
+                  <h3>Evening Sequin Top</h3>
+                  <p class="product-price">
+                    <span class="discounted-price">₹ 2,299</span>
+                    <span class="original-price" >₹ 5,749</span>
+                    <span class="discount-badge">60% OFF</span>
+                  </p>
+                </div>
+              </article>
+              <article class="product-card" data-category="kids">
+                <div class="product-image"><img src="https://loremflickr.com/400/500/kids,pajamas/all?lock=32" alt="Kids' Sleepwear"></div>
+                <div class="product-info">
+                  <h3>Cozy Pajama Set</h3>
+                  <p class="product-price">
+                    <span class="discounted-price">₹ 899</span>
+                    <span class="original-price">₹ 2,249</span>
+                    <span class="discount-badge">60% OFF</span>
+                  </p>
+                </div>
+              </article>
+              <article class="product-card" data-category="men">
+                <div class="product-image"><img src="https://loremflickr.com/400/500/men,swimwear/all?lock=32" alt="Men's Swimwear"></div>
+                <div class="product-info">
+                  <h3>Quick-Dry Swim Shorts</h3>
+                  <p class="product-price">
+                    <span class="discounted-price">₹ 1,199</span>
+                    <span class="original-price">₹ 2,999</span>
+                    <span class="discount-badge">60% OFF</span>
+                  </p>
+                </div>
+              </article>
+              <article class="product-card" data-category="women">
+                <div class="product-image"><img src="https://loremflickr.com/400/500/women,coat/all?lock=34" alt="Women's Jackets"></div>
+                <div class="product-info">
+                  <h3>Chic Trench Coat</h3>
+                  <p class="product-price">
+                    <span class="discounted-price">₹ 4,999</span>
+                    <span class="original-price">₹ 12,499</span>
+                    <span class="discount-badge">60% OFF</span>
+                  </p>
+                </div>
+              </article>
+              <article class="product-card" data-category="kids">
+                <div class="product-image"><img src="https://loremflickr.com/400/500/kids,polo/all?lock=35" alt="Kids' Schoolwear"></div>
+                <div class="product-info">
+                  <h3>Smart School Polo</h3>
+                  <p class="product-price">
+                    <span class="discounted-price">₹ 599</span>
+                    <span class="original-price">₹ 1,499</span>
+                    <span class="discount-badge">60% OFF</span>
+                  </p>
+                </div>
+              </article>
             </div>
-            <div class="product-info">
-              <h3>High Rise Straight Fit Jeans</h3>
-              <p class="product-price">₹ 2,599</p>
-            </div>
-          </article>
+            <button class="view-more-btn" onclick="showNextGroup('group4', this)">View More</button>
+          </div>
 
-          <!-- Product 4 -->
-          <article class="product-card">
-            <div class="product-image">
-              <img
-                src="assets/product4.png"
-                alt="Textured Graphic Knit T-Shirt"
-              />
+          <!-- Group 4 -->
+          <div class="gallery-group hidden" id="group4">
+            <div class="product-grid">
+              <article class="product-card" data-category="men">
+                <div class="product-image"><img src="https://loremflickr.com/400/500/men,polo,shirt/all?lock=40" alt="Men's Polos"></div>
+                <div class="product-info">
+                  <h3>Classic Fit Polo</h3>
+                  <p class="product-price">
+                    <span class="discounted-price">₹ 1,399</span>
+                    <span class="original-price">₹ 3,499</span>
+                    <span class="discount-badge">60% OFF</span>
+                  </p>
+                </div>
+              </article>
+              <article class="product-card" data-category="women">
+                <div class="product-image"><img src="https://loremflickr.com/400/500/women,skirt/all?lock=41" alt="Women's Skirts"></div>
+                <div class="product-info">
+                  <h3>Pleated Midi Skirt</h3>
+                  <p class="product-price">
+                    <span class="discounted-price">₹ 1,699</span>
+                    <span class="original-price">₹ 4,249</span>
+                    <span class="discount-badge">60% OFF</span>
+                  </p>
+                </div>
+              </article>
+              <article class="product-card" data-category="kids">
+                <div class="product-image"><img src="https://loremflickr.com/400/500/kids,tshirt/all?lock=42" alt="Kids' New Arrival"></div>
+                <div class="product-info">
+                  <h3>Graphic Cotton Tee</h3>
+                  <p class="product-price">
+                    <span class="discounted-price">₹ 499</span>
+                    <span class="original-price">₹ 1,249</span>
+                    <span class="discount-badge">60% OFF</span>
+                  </p>
+                </div>
+              </article>
+              <article class="product-card" data-category="men">
+                <div class="product-image"><img src="https://loremflickr.com/400/500/men,cargo,pants/all?lock=43" alt="Men's New Arrival"></div>
+                <div class="product-info">
+                  <h3>Cotton Cargo Pants</h3>
+                  <p class="product-price">
+                    <span class="discounted-price">₹ 2,499</span>
+                    <span class="original-price">₹ 6,249</span>
+                    <span class="discount-badge">60% OFF</span>
+                  </p>
+                </div>
+              </article>
+              <article class="product-card" data-category="women">
+                <div class="product-image"><img src="https://loremflickr.com/400/500/women,blouse/all?lock=44" alt="Women's New Arrival"></div>
+                <div class="product-info">
+                  <h3>Linen Blend Shirt</h3>
+                  <p class="product-price">
+                    <span class="discounted-price">₹ 1,599</span>
+                    <span class="original-price">₹ 3,999</span>
+                    <span class="discount-badge">60% OFF</span>
+                  </p>
+                </div>
+              </article>
+              <article class="product-card" data-category="kids">
+                <div class="product-image"><img src="https://loremflickr.com/400/500/kids,dungarees/all?lock=45" alt="Kids' New Arrival"></div>
+                <div class="product-info">
+                  <h3>Denim Dungarees</h3>
+                  <p class="product-price">
+                    <span class="discounted-price">₹ 1,299</span>
+                    <span class="original-price">₹ 3,249</span>
+                    <span class="discount-badge">60% OFF</span>
+                  </p>
+                </div>
+              </article>
             </div>
-            <div class="product-info">
-              <h3>Textured Graphic Knit T-Shirt</h3>
-              <p class="product-price">₹ 2,299</p>
-            </div>
-          </article>
+          </div>
         </div>
       </section>
 
-      <!-- Brand Story -->
-      <section class="brand-story">
+      <!-- Brand Story & Contact -->
+      <section class="brand-story" id="about">
         <div class="story-content">
-          <h2>FashionAura India: Your Style Playground</h2>
+          <h2>Our Brand Story</h2>
           <p>
-            FashionAura is an international fashion brand for young women. The
-            FashionAura girl always looks amazing in an effortless way! Fashion
-            is her passion – a creative space where she can experiment with
-            different attitudes, feels, and looks.
+            Fashion Aurah offers premium branded clothes with up to 60% discount on MRP. 
+            We are manufacturers committed to bringing high-quality, trendy fashion to every wardrobe at affordable prices.
           </p>
-          <p>
-            Our journey began with a vision to bring high-quality, trendy
-            fashion to every wardrobe. Today, we continue to push boundaries and
-            inspire confidence through our collections.
-          </p>
-          <p>Welcome to the world of FashionAura, where fashion is a thrill!</p>
+          
+          <div class="contact-info">
+            <div class="contact-grid">
+              <div class="contact-details">
+                <h3>Get in Touch</h3>
+                <p><i data-lucide="phone"></i> <strong>Phone:</strong> +91 9944725450</p>
+                <p><i data-lucide="message-circle"></i> <strong>WhatsApp:</strong> <a href="https://wa.me/919944725450" target="_blank">Chat with us</a></p>
+                <p><i data-lucide="map-pin"></i> <strong>Address:</strong> 218, 9th Main Rd, Sector 6, HSR Layout, Bengaluru, Karnataka 560102</p>
+                
+                <div class="whatsapp-group">
+                    <a href="https://wa.me/919944725450" class="wa-join-btn">Join Our WhatsApp Group for New Arrivals</a>
+                </div>
+              </div>
+
+              <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d18229.38368207243!2d77.61924415!3d12.91187995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3bae1566b3693933%3A0x15cb43bac0a2e77c!2sPandit%20Ji%20Sweet%20%26%20Namkeen%20-%20HSR%20Layout%2C%20218%2C%209th%20Main%20Rd%2C%20near%20Lawrence%20High%20School%20Icse%2C%20Sector%206%2C%20HSR%20Layout%2C%20Bengaluru%2C%20Karnataka%20560102!3m2!1d12.9140628!2d77.635148!5e1!3m2!1sen!2sin!4v1772198068992!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919944725450" class="floating-wa" target="_blank" title="Chat with us on WhatsApp">
+        <i data-lucide="message-circle"></i>
+    </a>
 
     <footer>
       <p>&copy; 2026 FashionAura. All Rights Reserved.</p>
@@ -177,14 +431,48 @@
       // Hero Slider Logic
       const slider = document.getElementById('heroSlider');
       let currentSlide = 0;
-      const totalSlides = 4;
+      let slides = slider.querySelectorAll('.slide');
+      let totalSlides = slides.length;
 
       function nextSlide() {
           currentSlide = (currentSlide + 1) % totalSlides;
-          slider.style.transform = `translateX(-${currentSlide * 25}%)`;
+          slider.style.transform = `translateX(-${currentSlide * 100}%)`;
       }
 
       setInterval(nextSlide, 4000); // Change image every 4 seconds
+
+      // Show Next Group Logic
+      function showNextGroup(groupId, btn) {
+          const group = document.getElementById(groupId);
+          if (group) {
+              group.classList.remove('hidden');
+              btn.style.display = 'none'; // Hide current button
+              lucide.createIcons(); // Refresh icons if needed
+          }
+      }
+
+      // Mobile Menu Logic
+      const menuToggle = document.getElementById('menuToggle');
+      const menuClose = document.getElementById('menuClose');
+      const subNav = document.getElementById('subNav');
+
+      if (menuToggle && menuClose && subNav) {
+          menuToggle.addEventListener('click', () => {
+              subNav.classList.add('active');
+          });
+
+          menuClose.addEventListener('click', () => {
+              subNav.classList.remove('active');
+          });
+
+          // Close menu when clicking links
+          const navLinks = subNav.querySelectorAll('a');
+          navLinks.forEach(link => {
+              link.addEventListener('click', () => {
+                  subNav.classList.remove('active');
+              });
+          });
+      }
     </script>
   </body>
 </html>
