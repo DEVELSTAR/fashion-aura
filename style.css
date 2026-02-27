@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap");
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --secondary-text: #666666;
+  --light-gray: #f5f5f5;
+  --border-color: #eeeeee;
+  --accent-color: #000000;
+  --container-width: 1200px;
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+/* Header & Navigation */
+.top-bar {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.top-bar a {
+    color: #fff;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+header {
+    width: 100%;
+    padding: 1.5rem 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logo-container {
+    padding-bottom: 0rem;
+}
+
+.logo {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.sub-nav {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0.8rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sub-nav a {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+    position: relative;
+}
+
+.sub-nav a:hover {
+    color: #000;
+}
+
+.sub-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+.sub-nav a:hover::after {
+    width: 100%;
+}
+
+/* Hero Slider */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.slide {
+    width: 25%;
+    height: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background: white;
+  color: black;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: black;
+  color: white;
+  transform: translateY(-5px);
+}
+
+/* Promo Icons */
+.promo-icons {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem 0;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.promo-item {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.promo-item i {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.promo-item p {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+/* Brands Section */
+.brands {
+  background-color: var(--light-gray);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.brands h2 {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: var(--secondary-text);
+}
+
+.brand-grid {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.brand-item {
+  font-size: 1.5rem;
+  font-weight: 700;
+  opacity: 0.6;
+  transition: var(--transition);
+}
+
+.brand-item:hover {
+  opacity: 1;
+}
+
+/* Product Section */
+.products {
+  padding: 10rem 0;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: black;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  padding: 0 2rem;
+}
+
+.product-card {
+  text-align: left;
+  cursor: pointer;
+}
+
+.product-image {
+  width: 100%;
+  aspect-ratio: 1/1.3;
+  background-color: var(--light-gray);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.05);
+}
+
+.product-info h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.product-price {
+  font-weight: 600;
+  color: var(--secondary-text);
+}
+
+/* Brand Story */
+.brand-story {
+  padding: 8rem 2rem;
+  background: var(--light-gray);
+  text-align: center;
+}
+
+.story-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.story-content h2 {
+  margin-bottom: 2rem;
+}
+
+.story-content p {
+  color: var(--secondary-text);
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  padding: 4rem 0;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  color: var(--secondary-text);
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .promo-icons {
+        padding: 4rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem 0 0.5rem;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+
+    .sub-nav {
+        display: flex;
+        gap: 1.5rem;
+        padding: 0.8rem 1rem;
+        overflow-x: auto !important;
+        flex-wrap: nowrap !important;
+        justify-content: flex-start;
+        white-space: nowrap;
+        width: 100%;
+        max-width: 100vw;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .sub-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .sub-nav a {
+        font-size: 0.75rem;
+        flex-shrink: 0;
+        display: inline-block;
+    }
+
+    .hero {
+        height: 60vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        padding: 0.8rem 2rem;
+        font-size: 0.8rem;
+    }
+
+    .promo-icons {
+        flex-direction: column;
+        gap: 3rem;
+        padding: 3rem 1rem;
+    }
+
+    .brand-grid {
+        gap: 2rem;
+    }
+
+    .brand-item {
+        font-size: 1.2rem;
+    }
+
+    .products {
+        padding: 5rem 0;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .product-info h3 {
+        font-size: 0.85rem;
+    }
+
+    .brand-story {
+        padding: 4rem 1.5rem;
+    }
+
+    .story-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .story-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+    }
+    
+    .logo {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-bar {
+        font-size: 0.65rem;
+        padding: 10px 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+}

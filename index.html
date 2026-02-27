@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FashionAura | Official Online Store</title>
+    <meta
+      name="description"
+      content="Discover the latest trends in women's fashion at FashionAura. Shop denims, tops, dresses and more."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <div class="top-bar">
+        Pay Day Just Got Better! UP TO 50% OFF* + Buy 2 get Addl 10% off ! ➡️ <a href="#">Visit now</a>
+    </div>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo">Fashion Aurah</div>
+        </div>
+        <nav class="sub-nav">
+            <a href="#">All Products</a>
+            <a href="#">New In</a>
+            <a href="#">Travel Edit</a>
+            <a href="#">Denim</a>
+            <a href="#">Tops</a>
+            <a href="#">Shirts</a>
+            <a href="#">Dresses</a>
+            <a href="#">Co-ords</a>
+            <a href="#">Sale</a>
+            <a href="#">Track My Order</a>
+        </nav>
+    </header>
+
+    <main>
+      <!-- Hero Slider Section -->
+      <section class="hero">
+            <div class="slider-container" id="heroSlider">
+                <div class="slide"><img src="assets/1.png" alt="FashionAura Style 1"></div>
+                <div class="slide"><img src="assets/2.png" alt="FashionAura Style 2"></div>
+                <div class="slide"><img src="assets/3.png" alt="FashionAura Style 3"></div>
+                <div class="slide"><img src="assets/4.png" alt="FashionAura Style 4"></div>
+            </div>
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h1>Everything Denim</h1>
+                    <p>Experience the perfect fit</p>
+                    <a href="#" class="btn">Visit Now</a>
+                </div>
+            </div>
+        </section>
+
+      <!-- Promo Icons -->
+      <section class="promo-icons">
+        <div class="promo-item">
+          <i data-lucide="scissors"></i>
+          <p>
+            Free Alterations <br />
+            at Stores
+          </p>
+        </div>
+        <div class="promo-item">
+          <i data-lucide="rotate-ccw"></i>
+          <p>
+            15 Days <br />
+            Returns
+          </p>
+        </div>
+        <div class="promo-item">
+          <i data-lucide="truck"></i>
+          <p>
+            Free Shipping <br />
+            Above ₹2499
+          </p>
+        </div>
+      </section>
+
+      <!-- Brands Section -->
+      <section class="brands">
+        <h2>Explore More Brands</h2>
+        <div class="brand-grid">
+          <div class="brand-item">VERO MODA</div>
+          <div class="brand-item">JACK & JONES</div>
+          <div class="brand-item">SELECTED</div>
+          <div class="brand-item">ONLY</div>
+          <div class="brand-item">VILLA</div>
+        </div>
+      </section>
+
+      <!-- Product Grid -->
+      <section class="products">
+        <h2 class="section-title">First on FashionAura</h2>
+        <div class="product-grid">
+          <!-- Product 1 -->
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/product1.png" alt="Slim Fit Cropped T-Shirt" />
+            </div>
+            <div class="product-info">
+              <h3>Slim Fit Cropped T-Shirt</h3>
+              <p class="product-price">₹ 999</p>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/product2.png" alt="Basic Snug Cropped T-Shirt" />
+            </div>
+            <div class="product-info">
+              <h3>Basic Snug Cropped T-Shirt</h3>
+              <p class="product-price">₹ 799</p>
+            </div>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="product-card">
+            <div class="product-image">
+              <img
+                src="assets/product3.png"
+                alt="High Rise Straight Fit Jeans"
+              />
+            </div>
+            <div class="product-info">
+              <h3>High Rise Straight Fit Jeans</h3>
+              <p class="product-price">₹ 2,599</p>
+            </div>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="product-card">
+            <div class="product-image">
+              <img
+                src="assets/product4.png"
+                alt="Textured Graphic Knit T-Shirt"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Textured Graphic Knit T-Shirt</h3>
+              <p class="product-price">₹ 2,299</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Brand Story -->
+      <section class="brand-story">
+        <div class="story-content">
+          <h2>FashionAura India: Your Style Playground</h2>
+          <p>
+            FashionAura is an international fashion brand for young women. The
+            FashionAura girl always looks amazing in an effortless way! Fashion
+            is her passion – a creative space where she can experiment with
+            different attitudes, feels, and looks.
+          </p>
+          <p>
+            Our journey began with a vision to bring high-quality, trendy
+            fashion to every wardrobe. Today, we continue to push boundaries and
+            inspire confidence through our collections.
+          </p>
+          <p>Welcome to the world of FashionAura, where fashion is a thrill!</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 FashionAura. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
+
+      // Hero Slider Logic
+      const slider = document.getElementById('heroSlider');
+      let currentSlide = 0;
+      const totalSlides = 4;
+
+      function nextSlide() {
+          currentSlide = (currentSlide + 1) % totalSlides;
+          slider.style.transform = `translateX(-${currentSlide * 25}%)`;
+      }
+
+      setInterval(nextSlide, 4000); // Change image every 4 seconds
+    </script>
+  </body>
+</html>
