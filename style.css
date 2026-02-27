@@ -219,15 +219,27 @@ header {
 
 .hero-content h1 {
   font-size: 4rem;
-  margin-bottom: 1rem;
-  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  letter-spacing: -2px;
+  line-height: 1;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  animation: slideUp 1s ease-out;
 }
 
 .hero-content p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
+  font-weight: 300;
+  opacity: 0.9;
+  animation: slideUp 1.2s ease-out;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 
 .btn {
@@ -329,24 +341,27 @@ header {
 }
 
 .view-more-btn {
-    margin-top: 3rem;
-    padding: 1rem 3.5rem;
+    display: block;
+    margin: 4rem auto 0;
+    padding: 1.2rem 4rem;
     background: transparent;
-    color: #000;
     border: 2px solid #000;
-    font-weight: 600;
+    color: #000;
+    font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
     font-family: inherit;
+    border-radius: 2px;
 }
 
 .view-more-btn:hover {
     background: #000;
     color: #fff;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+    letter-spacing: 5px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 .section-title {
@@ -478,7 +493,7 @@ header {
 }
 
 .contact-details p {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     gap: 1rem;
     margin-bottom: 1.2rem;
@@ -492,23 +507,38 @@ header {
 }
 
 .whatsapp-group {
-    margin-top: 2.5rem;
+    margin-top: 3rem;
 }
 
 .wa-join-btn {
-    display: inline-block;
-    padding: 1rem 2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding: 1.2rem 2.8rem;
     background: #25D366;
     color: #fff;
     text-decoration: none;
-    font-weight: 600;
-    border-radius: 4px;
-    transition: all 0.3s ease;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 100px;
+    border: 2px solid #25D366;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wa-join-btn i {
+    color: #25D366;
+    width: 24px;
+    height: 24px;
 }
 
 .wa-join-btn:hover {
     background: #128C7E;
-    transform: translateY(-2px);
+    color: #fff;
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(37, 211, 102, 0.3);
+}
+
+.wa-join-btn:hover i {
     color: #fff;
 }
 
@@ -742,6 +772,7 @@ footer {
     }
 
     .hero-content h1 {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
+        letter-spacing: -1px;
     }
 }
