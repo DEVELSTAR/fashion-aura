@@ -555,33 +555,32 @@ header {
 }
 
 /* Floating WhatsApp */
-.floating-wa {
+.whatsapp-float {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 60px;
-    height: 60px;
-    background-color: #25D366;
-    color: white;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    background: #25d366;
     border-radius: 50%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    justify-content: center;
     z-index: 1000;
-    transition: all 0.3s ease;
+    box-shadow: var(--shadow-lg);
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.floating-wa:hover {
-    transform: scale(1.1) translateY(-5px);
-    background-color: #128C7E;
-    color: white;
+.whatsapp-float:hover {
+    transform: scale(1.2);
+    background: #20b858;
 }
 
-.floating-wa i {
-    width: 30px;
-    height: 30px;
+.whatsapp-float i,
+.whatsapp-float svg {
+    font-size: 32px; /* or width/height for svg */
 }
+
 
 /* Responsive adjustments for contact grid */
 @media (max-width: 900px) {
