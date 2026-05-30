@@ -1,645 +1,338 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fashion Aurah | Clothing Store in HSR Layout Bangalore</title>
-    <meta name="description" content="Fashion Aurah is a clothing store in HSR Layout Bangalore offering branded clothes at affordable prices. Visit us for latest fashion trends.">
-    <link rel="stylesheet" href="style.css" />
-    <!-- Favicon -->
-    <link rel="icon" type="image/webp" href="images/favicon.webp" />
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-  </head>
-  <body>
-    <header>
-        <div class="top-bar blinking">
-            Limited Time Offer! Flat 60% OFF on all brands + Extra 10% OFF on 2 items ➡️ <a href="#">Visit now</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fashion Aurah | Branded Clothes at 60% Off — HSR Layout, Bangalore</title>
+  <meta name="description" content="Fashion Aurah — Premium branded clothes for Men, Women & Kids at up to 60% off MRP. Visit our store at Sector 6, HSR Layout, Bengaluru or WhatsApp us now." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://fashionaurah.com/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="images/favicon.webp" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════════════ -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="Fashion Aurah Home">
+        <img src="images/favicon.webp" alt="Fashion Aurah logo" width="38" height="38" />
+        <span>Fashion<strong>Aurah</strong></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="https://wa.me/919944725450" target="_blank" rel="noopener noreferrer" class="header-cta" id="header-wa">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112-.149.224-.579.73-.71.88-.131.149-.262.168-.486.056-.224-.112-.947-.349-1.804-1.113-.667-.595-1.117-1.329-1.248-1.554-.131-.225-.014-.346.099-.458.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374.075-.149.037-.28-.019-.393-.056-.113-.504-1.214-.69-1.663-.181-.435-.366-.377-.504-.383-.131-.006-.28-.006-.429-.006-.149 0-.392.056-.598.28-.206.225-.785.767-.785 1.871 0 1.104.804 2.171.916 2.321.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.536.171 1.024.147 1.412.089.43-.066 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.206-.15-.43-.262"/></svg>
+        WhatsApp Us
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+
+  <!-- ═══════════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-slider" id="hero-slider" aria-hidden="true">
+      <div class="hero-slide active" style="background-image: url('images/1.webp')"></div>
+      <div class="hero-slide" style="background-image: url('images/2.webp')"></div>
+      <div class="hero-slide" style="background-image: url('images/3.webp')"></div>
+      <div class="hero-slide" style="background-image: url('images/8.webp')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <p class="hero-eyebrow">HSR Layout, Bengaluru</p>
+      <h1>Branded Fashion.<br>Unbeatable Prices.</h1>
+      <p class="hero-sub">Premium clothes for Men, Women &amp; Kids — up to <strong>60% off</strong> MRP. Direct from manufacturer.</p>
+
+      <div class="hero-actions">
+        <a href="https://wa.me/919944725450" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="hero-wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112-.149.224-.579.73-.71.88-.131.149-.262.168-.486.056-.224-.112-.947-.349-1.804-1.113-.667-.595-1.117-1.329-1.248-1.554-.131-.225-.014-.346.099-.458.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374.075-.149.037-.28-.019-.393-.056-.113-.504-1.214-.69-1.663-.181-.435-.366-.377-.504-.383-.131-.006-.28-.006-.429-.006-.149 0-.392.056-.598.28-.206.225-.785.767-.785 1.871 0 1.104.804 2.171.916 2.321.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.536.171 1.024.147 1.412.089.43-.066 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.206-.15-.43-.262"/></svg>
+          Chat on WhatsApp
+        </a>
+        <a href="#gallery" class="btn btn-outline">View Collection</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       TRUST STRIP
+  ═══════════════════════════════════════════════ -->
+  <section class="trust-strip" aria-label="Key benefits">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <span>100% Branded</span>
+      </div>
+      <div class="trust-item">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        <span>Up to 60% Off MRP</span>
+      </div>
+      <div class="trust-item">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span>Men, Women &amp; Kids</span>
+      </div>
+      <div class="trust-item">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span>Direct Manufacturer</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════════ -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-image">
+        <img src="images/waldemar-brandt-GbveIG8YKMk-unsplash.webp" alt="Fashion Aurah store collection" loading="lazy" />
+      </div>
+      <div class="about-text">
+        <p class="section-eyebrow">Who We Are</p>
+        <h2>An Aura of Timeless Style</h2>
+        <p>More than just clothes — we offer confidence in a closet. Fashion Aurah is a manufacturer-direct store bringing you must-have staples and unique finds, each piece chosen to elevate your look.</p>
+        <p>Find us at our store in <strong>HSR Layout, Bengaluru</strong>. Walk in, explore our collection of branded Men's, Women's &amp; Kids' fashion, and walk out with premium style at a fraction of the price.</p>
+
+        <div class="brand-chips">
+          <span>Tommy Hilfiger</span>
+          <span>Nike</span>
+          <span>Zara</span>
+          <span>Adidas</span>
+          <span>H&amp;M</span>
+          <span>Gucci</span>
+          <span>Uniqlo</span>
+          <span>Dior</span>
         </div>
-        <div class="header-main">
-            <div class="logo-container">
-                <div class="logo"><span class="fashion">Fashion</span> <span class="aurah">Aurah</span></div>
-            </div>
-            
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-menu-toggle" id="menuToggle">
-                <i data-lucide="menu"></i>
-            </button>
 
-            <nav class="sub-nav" id="subNav">
-                <button class="menu-close" id="menuClose">
-                    <i data-lucide="x"></i>
-                </button>
-                <a href="#">All Products</a>
-                <a href="#">New Arrival</a>
-                <a href="#">Men</a>
-                <a href="#">Women</a>
-                <a href="#">Kids</a>
-            </nav>
+        <a href="#contact" class="btn btn-dark">Find Our Store</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       GALLERY
+  ═══════════════════════════════════════════════ -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Our Collection</p>
+        <h2>Fresh Arrivals &amp; Staples</h2>
+        <p class="section-desc">Drop by the store to see the full collection. New stock added regularly — join our WhatsApp group for updates.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item--tall">
+          <img src="images/1.webp" alt="Latest fashion collection" loading="lazy" />
         </div>
-    </header>
-
-    <main>
-      <!-- Hero Slider Section -->
-      <section class="hero">
-            <div class="slider-container" id="heroSlider">
-                <div class="slide">
-                    <picture>
-                        <source srcset="images/1.webp" type="image/webp">
-                        <img src="images/1.jpg" alt="Trendy Denim Collection">
-                    </picture>
-                </div>
-                <div class="slide">
-                    <picture>
-                        <source srcset="images/2.webp" type="image/webp">
-                        <img src="images/2.jpg" alt="Luxury Men's Apparel">
-                    </picture>
-                </div>
-                <div class="slide">
-                    <picture>
-                        <source srcset="images/3.webp" type="image/webp">
-                        <img src="images/3.jpg" alt="Elegant Women's Wear">
-                    </picture>
-                </div>
-                <div class="slide">
-                    <picture>
-                        <source srcset="images/5.webp" type="image/webp">
-                        <img src="images/5.jpg" alt="Playful Kids' Fashion">
-                    </picture>
-                </div>
-                <div class="slide">
-                    <picture>
-                        <source srcset="images/6.webp" type="image/webp">
-                        <img src="images/6.jpg" alt="Modern Street Style">
-                    </picture>
-                </div>
-                <div class="slide slide7">
-                    <picture>
-                        <source srcset="images/7.webp" type="image/webp">
-                        <img src="images/7.jpg" alt="Modern Street Style">
-                    </picture>
-                </div>
-                <div class="slide">
-                    <picture>
-                        <source srcset="images/8.webp" type="image/webp">
-                        <img src="images/8.jpg" alt="Modern Street Style">
-                    </picture>
-                </div>
-                <div class="slide slide9">
-                    <picture>
-                        <source srcset="images/9.webp" type="image/webp">
-                        <img src="images/9.jpg" alt="Modern Street Style">
-                    </picture>
-                </div>
-                <div class="slide slide10">
-                    <picture>
-                        <source srcset="images/10.webp" type="image/webp">
-                        <img src="images/10.jpg" alt="Modern Street Style">
-                    </picture>
-                </div>
-            </div>
-
-            <div class="hero-overlay">
-                <div class="hero-content">
-                    <h1>Unleash Your Aura</h1>
-                    <p>Premium Branded Fashion • Up to 60% OFF</p>
-                    <a href="#group1" class="btn">Explore Gallery</a>
-                </div>
-            </div>
-        </section>
-
-      <!-- Promo Icons -->
-      <section class="promo-icons">
-        <div class="promo-item">
+        <div class="gallery-item">
+          <img src="images/2.webp" alt="Men's branded apparel" loading="lazy" />
         </div>
-      </section>
-
-      <!-- Brands Section -->
-      <section class="brands">
-        <h2>Explore More Brands</h2>
-        <div class="brand-grid">
-          <div class="brand-item">Tommy Hilfiger</div>
-          <div class="brand-item">Nike</div>
-          <div class="brand-item">Zara</div>
-          <div class="brand-item">Dior</div>
-          <div class="brand-item">Gucci</div>
-          <div class="brand-item">Adidas</div>
-          <div class="brand-item">H&M</div>
-          <div class="brand-item">Uniqlo</div>
+        <div class="gallery-item">
+          <img src="images/3.webp" alt="Women's fashion" loading="lazy" />
         </div>
-      </section>
-
-      <!-- Product Grid -->
-      <section class="products">
-        <h2 class="section-title">Gallery</h2>
-        <div class="product-gallery">
-          <!-- Group 1 -->
-          <div class="gallery-group" id="group1">
-            <div class="product-grid">
-              <article class="product-card" data-category="men">
-                <div class="product-image">
-                    <picture>
-                        <source srcset="images/men.webp" type="image/webp">
-                        <img src="images/men.jpg" alt="Men">
-                    </picture>
-                </div>
-                <div class="product-info">
-                  <h3>Men's Premium Shirt</h3>
-                  <p class="product-price">
-                    <span class="discounted-price">₹ 1,299</span>
-                    <span class="original-price">₹ 3,249</span>
-                    <span class="discount-badge">60% OFF</span>
-                  </p>
-                </div>
-              </article>
-              <article class="product-card" data-category="women">
-                <div class="product-image">
-                    <picture>
-                        <source srcset="images/women.webp" type="image/webp">
-                        <img src="images/women.jpg" alt="Women">
-                    </picture>
-                </div>
-                <div class="product-info">
-                  <h3>Women's Floral Dress</h3>
-                  <p class="product-price">
-                    <span class="discounted-price">₹ 1,899</span>
-                    <span class="original-price">₹ 4,749</span>
-                    <span class="discount-badge">60% OFF</span>
-                  </p>
-                </div>
-              </article>
-              <article class="product-card" data-category="kids">
-                <div class="product-image">
-                    <picture>
-                        <source srcset="images/kids.webp" type="image/webp">
-                        <img src="images/kids.jpg" alt="Kids">
-                    </picture>
-                </div>
-                <div class="product-info">
-                  <h3>Kids' Denim Set</h3>
-                  <p class="product-price">
-                    <span class="discounted-price">₹ 999</span>
-                    <span class="original-price">₹ 2,499</span>
-                    <span class="discount-badge">60% OFF</span>
-                  </p>
-                </div>
-              </article>
-              <article class="product-card" data-category="men">
-                <div class="product-image">
-                    <picture>
-                        <source srcset="images/men.webp" type="image/webp">
-                        <img src="images/men.jpg" alt="Men">
-                    </picture>
-                </div>
-                <div class="product-info">
-                  <h3>Classic Blue Jeans</h3>
-                  <p class="product-price">
-                    <span class="discounted-price">₹ 2,199</span>
-                    <span class="original-price">₹ 5,499</span>
-                    <span class="discount-badge">60% OFF</span>
-                  </p>
-                </div>
-              </article>
-              <article class="product-card" data-category="women">
-                <div class="product-image">
-                    <picture>
-                        <source srcset="images/women.webp" type="image/webp">
-                        <img src="images/women.jpg" alt="Women">
-                    </picture>
-                </div>
-                <div class="product-info">
-                  <h3>Casual Summer Top</h3>
-                  <p class="product-price">
-                    <span class="discounted-price">₹ 799</span>
-                    <span class="original-price">₹ 1,999</span>
-                    <span class="discount-badge">60% OFF</span>
-                  </p>
-                </div>
-              </article>
-              <article class="product-card" data-category="kids">
-                <div class="product-image">
-                    <picture>
-                        <source srcset="images/kids.webp" type="image/webp">
-                        <img src="images/kids.jpg" alt="Kids">
-                    </picture>
-                </div>
-                <div class="product-info">
-                  <h3>Cotton T-Shirt Pack</h3>
-                  <p class="product-price">
-                    <span class="discounted-price">₹ 1,199</span>
-                    <span class="original-price">₹ 2,999</span>
-                    <span class="discount-badge">60% OFF</span>
-                  </p>
-                </div>
-              </article>
-            </div>
-            <button class="view-more-btn" onclick="showNextGroup('group2', this)">View More</button>
-          </div>
-
-          <!-- Group 2 -->
-          <div class="gallery-group hidden" id="group2">
-            <div class="product-grid">
-              <article class="product-card" data-category="men">
-                <div class="product-image">
-                    <picture>
-                        <source srcset="images/men.webp" type="image/webp">
-                        <img src="images/men.jpg" alt="Men">
-                    </picture>
-                </div>
-                <div class="product-info">
-                  <h3>Rugged Denim Jacket</h3>
-                  <p class="product-price">
-                    <span class="discounted-price">₹ 3,499</span>
-                    <span class="original-price">₹ 8,749</span>
-                    <span class="discount-badge">60% OFF</span>
-                  </p>
-                </div>
-              </article>
-              <article class="product-card" data-category="women">
-                <div class="product-image">
-                    <picture>
-                        <source srcset="images/women.webp" type="image/webp">
-                        <img src="images/women.jpg" alt="Women">
-                    </picture>
-                </div>
-                <div class="product-info">
-                  <h3>Designer Handbag</h3>
-                  <p class="product-price">
-                    <span class="discounted-price">₹ 2,799</span>
-                    <span class="original-price">₹ 6,999</span>
-                    <span class="discount-badge">60% OFF</span>
-                  </p>
-                </div>
-              </article>
-              <article class="product-card" data-category="kids">
-                <div class="product-image">
-                    <picture>
-                        <source srcset="images/kids.webp" type="image/webp">
-                        <img src="images/kids.jpg" alt="Kids">
-                    </picture>
-                </div>
-                <div class="product-info">
-                  <h3>Sporty Sneakers</h3>
-                  <p class="product-price">
-                    <span class="discounted-price">₹ 1,599</span>
-                    <span class="original-price">₹ 3,999</span>
-                    <span class="discount-badge">60% OFF</span>
-                  </p>
-                </div>
-              </article>
-              <article class="product-card" data-category="men">
-                <div class="product-image">
-                    <picture>
-                        <source srcset="images/men.webp" type="image/webp">
-                        <img src="images/men.jpg" alt="Men">
-                    </picture>
-                </div>
-                <div class="product-info">
-                  <h3>Slim Fit Trousers</h3>
-                  <p class="product-price">
-                    <span class="discounted-price">₹ 1,999</span>
-                    <span class="original-price">₹ 4,999</span>
-                    <span class="discount-badge">60% OFF</span>
-                  </p>
-                </div>
-              </article>
-              <article class="product-card" data-category="women">
-                <div class="product-image">
-                    <picture>
-                        <source srcset="images/women.webp" type="image/webp">
-                        <img src="images/women.jpg" alt="Women">
-                    </picture>
-                </div>
-                <div class="product-info">
-                  <h3>Stretch Yoga Pants</h3>
-                  <p class="product-price">
-                    <span class="discounted-price">₹ 1,499</span>
-                    <span class="original-price">₹ 3,749</span>
-                    <span class="discount-badge">60% OFF</span>
-                  </p>
-                </div>
-              </article>
-              <article class="product-card" data-category="kids">
-                <div class="product-image">
-                    <picture>
-                        <source srcset="images/kids.webp" type="image/webp">
-                        <img src="images/kids.jpg" alt="Kids">
-                    </picture>
-                </div>
-                <div class="product-info">
-                  <h3>Winter Puffer Jacket</h3>
-                  <p class="product-price">
-                    <span class="discounted-price">₹ 2,899</span>
-                    <span class="original-price">₹ 7,249</span>
-                    <span class="discount-badge">60% OFF</span>
-                  </p>
-                </div>
-              </article>
-            </div>
-            <button class="view-more-btn" onclick="showNextGroup('group3', this)">View More</button>
-          </div>
-
-          <!-- Group 3 -->
-          <div class="gallery-group hidden" id="group3">
-            <div class="product-grid">
-              <article class="product-card" data-category="men">
-                <div class="product-image">
-                    <picture>
-                        <source srcset="images/men.webp" type="image/webp">
-                        <img src="images/men.jpg" alt="Men">
-                    </picture>
-                </div>
-                <div class="product-info">
-                  <h3>Leather Wallet</h3>
-                  <p class="product-price">
-                    <span class="discounted-price">₹ 1,099</span>
-                    <span class="original-price">₹ 2,749</span>
-                    <span class="discount-badge">60% OFF</span>
-                  </p>
-                </div>
-              </article>
-              <article class="product-card" data-category="women">
-                <div class="product-image">
-                    <picture>
-                        <source srcset="images/women.webp" type="image/webp">
-                        <img src="images/women.jpg" alt="Women">
-                    </picture>
-                </div>
-                <div class="product-info">
-                  <h3>Evening Sequin Top</h3>
-                  <p class="product-price">
-                    <span class="discounted-price">₹ 2,299</span>
-                    <span class="original-price" >₹ 5,749</span>
-                    <span class="discount-badge">60% OFF</span>
-                  </p>
-                </div>
-              </article>
-              <article class="product-card" data-category="kids">
-                <div class="product-image">
-                    <picture>
-                        <source srcset="images/kids.webp" type="image/webp">
-                        <img src="images/kids.jpg" alt="Kids">
-                    </picture>
-                </div>
-                <div class="product-info">
-                  <h3>Cozy Pajama Set</h3>
-                  <p class="product-price">
-                    <span class="discounted-price">₹ 899</span>
-                    <span class="original-price">₹ 2,249</span>
-                    <span class="discount-badge">60% OFF</span>
-                  </p>
-                </div>
-              </article>
-              <article class="product-card" data-category="men">
-                <div class="product-image">
-                    <picture>
-                        <source srcset="images/men.webp" type="image/webp">
-                        <img src="images/men.jpg" alt="Men">
-                    </picture>
-                </div>
-                <div class="product-info">
-                  <h3>Quick-Dry Swim Shorts</h3>
-                  <p class="product-price">
-                    <span class="discounted-price">₹ 1,199</span>
-                    <span class="original-price">₹ 2,999</span>
-                    <span class="discount-badge">60% OFF</span>
-                  </p>
-                </div>
-              </article>
-              <article class="product-card" data-category="women">
-                <div class="product-image">
-                    <picture>
-                        <source srcset="images/women.webp" type="image/webp">
-                        <img src="images/women.jpg" alt="Women">
-                    </picture>
-                </div>
-                <div class="product-info">
-                  <h3>Chic Trench Coat</h3>
-                  <p class="product-price">
-                    <span class="discounted-price">₹ 4,999</span>
-                    <span class="original-price">₹ 12,499</span>
-                    <span class="discount-badge">60% OFF</span>
-                  </p>
-                </div>
-              </article>
-              <article class="product-card" data-category="kids">
-                <div class="product-image">
-                    <picture>
-                        <source srcset="images/kids.webp" type="image/webp">
-                        <img src="images/kids.jpg" alt="Kids">
-                    </picture>
-                </div>
-                <div class="product-info">
-                  <h3>Smart School Polo</h3>
-                  <p class="product-price">
-                    <span class="discounted-price">₹ 599</span>
-                    <span class="original-price">₹ 1,499</span>
-                    <span class="discount-badge">60% OFF</span>
-                  </p>
-                </div>
-              </article>
-            </div>
-            <button class="view-more-btn" onclick="showNextGroup('group4', this)">View More</button>
-          </div>
-
-          <!-- Group 4 -->
-          <div class="gallery-group hidden" id="group4">
-            <div class="product-grid">
-              <article class="product-card" data-category="men">
-                <div class="product-image">
-                    <picture>
-                        <source srcset="images/men.webp" type="image/webp">
-                        <img src="images/men.jpg" alt="Men">
-                    </picture>
-                </div>
-                <div class="product-info">
-                  <h3>Classic Fit Polo</h3>
-                  <p class="product-price">
-                    <span class="discounted-price">₹ 1,399</span>
-                    <span class="original-price">₹ 3,499</span>
-                    <span class="discount-badge">60% OFF</span>
-                  </p>
-                </div>
-              </article>
-              <article class="product-card" data-category="women">
-                <div class="product-image">
-                    <picture>
-                        <source srcset="images/women.webp" type="image/webp">
-                        <img src="images/women.jpg" alt="Women">
-                    </picture>
-                </div>
-                <div class="product-info">
-                  <h3>Pleated Midi Skirt</h3>
-                  <p class="product-price">
-                    <span class="discounted-price">₹ 1,699</span>
-                    <span class="original-price">₹ 4,249</span>
-                    <span class="discount-badge">60% OFF</span>
-                  </p>
-                </div>
-              </article>
-              <article class="product-card" data-category="kids">
-                <div class="product-image">
-                    <picture>
-                        <source srcset="images/kids.webp" type="image/webp">
-                        <img src="images/kids.jpg" alt="Kids">
-                    </picture>
-                </div>
-                <div class="product-info">
-                  <h3>Graphic Cotton Tee</h3>
-                  <p class="product-price">
-                    <span class="discounted-price">₹ 499</span>
-                    <span class="original-price">₹ 1,249</span>
-                    <span class="discount-badge">60% OFF</span>
-                  </p>
-                </div>
-              </article>
-              <article class="product-card" data-category="men">
-                <div class="product-image">
-                    <picture>
-                        <source srcset="images/men.webp" type="image/webp">
-                        <img src="images/men.jpg" alt="Men">
-                    </picture>
-                </div>
-                <div class="product-info">
-                  <h3>Cotton Cargo Pants</h3>
-                  <p class="product-price">
-                    <span class="discounted-price">₹ 2,499</span>
-                    <span class="original-price">₹ 6,249</span>
-                    <span class="discount-badge">60% OFF</span>
-                  </p>
-                </div>
-              </article>
-              <article class="product-card" data-category="women">
-                <div class="product-image">
-                    <picture>
-                        <source srcset="images/women.webp" type="image/webp">
-                        <img src="images/women.jpg" alt="Women">
-                    </picture>
-                </div>
-                <div class="product-info">
-                  <h3>Linen Blend Shirt</h3>
-                  <p class="product-price">
-                    <span class="discounted-price">₹ 1,599</span>
-                    <span class="original-price">₹ 3,999</span>
-                    <span class="discount-badge">60% OFF</span>
-                  </p>
-                </div>
-              </article>
-              <article class="product-card" data-category="kids">
-                <div class="product-image">
-                    <picture>
-                        <source srcset="images/kids.webp" type="image/webp">
-                        <img src="images/kids.jpg" alt="Kids">
-                    </picture>
-                </div>
-                <div class="product-info">
-                  <h3>Denim Dungarees</h3>
-                  <p class="product-price">
-                    <span class="discounted-price">₹ 1,299</span>
-                    <span class="original-price">₹ 3,249</span>
-                    <span class="discount-badge">60% OFF</span>
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
+        <div class="gallery-item gallery-item--wide">
+          <img src="images/5.webp" alt="Trendy outfits" loading="lazy" />
         </div>
-      </section>
+        <div class="gallery-item">
+          <img src="images/6.webp" alt="Street style collection" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/7.webp" alt="Casual wear" loading="lazy" />
+        </div>
+        <div class="gallery-item gallery-item--tall">
+          <img src="images/8.webp" alt="Premium clothing" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/9.webp" alt="Ethnic and western wear" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/10.webp" alt="Discounted branded clothes" loading="lazy" />
+        </div>
+      </div>
 
-      <!-- Brand Story & Contact -->
-      <section class="brand-story" id="about">
-        <div class="story-content">
-          <h2>Our Brand Story</h2>
-          <p>
-            Fashion Aurah offers premium branded clothes with up to 60% discount on MRP. 
-            We are manufacturers committed to bringing high-quality, trendy fashion to every wardrobe at affordable prices.
-          </p>
-          
-          <div class="contact-info">
-            <div class="contact-grid">
-              <div class="contact-details">
-                <h3>Get in Touch</h3>
-                <p><i data-lucide="phone"></i> <strong>Phone:</strong> +91 9944725450</p>
-                <p><i data-lucide="message-circle"></i> <strong>WhatsApp:</strong> <a href="https://wa.me/919944725450" target="_blank">Chat with us</a></p>
-                <p><i data-lucide="map-pin"></i> <strong>Address:</strong> 217/A, Sector 6, 9th Main, 15th Cross,
-HSR Layout, Bangalore - 560102</p>
-                
-                <div class="whatsapp-group">
-                    <a href="https://wa.me/919944725450" class="wa-join-btn">Join Our WhatsApp Group for New Arrivals</a>
-                </div>
+      <div class="gallery-cta">
+        <p>Want to see more? New arrivals every week.</p>
+        <a href="https://wa.me/919944725450" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="gallery-wa">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112-.149.224-.579.73-.71.88-.131.149-.262.168-.486.056-.224-.112-.947-.349-1.804-1.113-.667-.595-1.117-1.329-1.248-1.554-.131-.225-.014-.346.099-.458.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374.075-.149.037-.28-.019-.393-.056-.113-.504-1.214-.69-1.663-.181-.435-.366-.377-.504-.383-.131-.006-.28-.006-.429-.006-.149 0-.392.056-.598.28-.206.225-.785.767-.785 1.871 0 1.104.804 2.171.916 2.321.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.536.171 1.024.147 1.412.089.43-.066 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.206-.15-.43-.262"/></svg>
+          Join WhatsApp for Updates
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════════ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Visit Us</p>
+        <h2>Come Find Us</h2>
+        <p class="section-desc">We're open every day. Walk in and explore the collection — no appointment needed.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info -->
+        <div class="contact-info-col">
+          <div class="contact-card">
+            <div class="contact-row">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
               </div>
+              <div>
+                <span class="contact-label">Address</span>
+                <a href="https://maps.google.com/?q=Fashion+Aurah+HSR+Layout+Bangalore" target="_blank" rel="noopener noreferrer" class="contact-value contact-link">
+                  218, 9th Main Rd, near Lawrence High School ICSE,<br>
+                  Sector 6, HSR Layout, Bengaluru — 560102
+                </a>
+              </div>
+            </div>
 
-              <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65787.25404910321!2d77.59607540954887!3d12.914038007118474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15107262d16f%3A0xba3813c787bc4c82!2sFashion%20Aurah!5e1!3m2!1sen!2sin!4v1775674364969!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contact-row">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.92 1.34h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.06a16 16 0 0 0 6.86 6.86l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02Z"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Phone</span>
+                <a href="tel:+919944725450" class="contact-value contact-link">+91 99447 25450</a>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <div class="contact-icon contact-icon--wa">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112-.149.224-.579.73-.71.88-.131.149-.262.168-.486.056-.224-.112-.947-.349-1.804-1.113-.667-.595-1.117-1.329-1.248-1.554-.131-.225-.014-.346.099-.458.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374.075-.149.037-.28-.019-.393-.056-.113-.504-1.214-.69-1.663-.181-.435-.366-.377-.504-.383-.131-.006-.28-.006-.429-.006-.149 0-.392.056-.598.28-.206.225-.785.767-.785 1.871 0 1.104.804 2.171.916 2.321.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.536.171 1.024.147 1.412.089.43-.066 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.206-.15-.43-.262"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">WhatsApp</span>
+                <a href="https://wa.me/919944725450" target="_blank" rel="noopener noreferrer" class="contact-value contact-link">
+                  Message us for stock &amp; pricing
+                </a>
               </div>
             </div>
           </div>
+
+          <div class="contact-actions">
+            <a href="tel:+919944725450" class="btn btn-dark" id="contact-call">Call Now</a>
+            <a href="https://wa.me/919944725450" target="_blank" rel="noopener noreferrer" class="btn btn-wa" id="contact-wa">WhatsApp</a>
+            <a href="https://maps.google.com/?q=Fashion+Aurah+HSR+Layout+Bangalore" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark" id="contact-dir">Get Directions</a>
+          </div>
         </div>
-      </section>
-    </main>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/919944725450" class="whatsapp-float">
-        <svg width="35" height="35" viewBox="0 0 24 24" fill="white"><path d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112-.149.224-.579.73-.71.88-.131.149-.262.168-.486.056-.224-.112-.947-.349-1.804-1.113-.667-.595-1.117-1.329-1.248-1.554-.131-.225-.014-.346.099-.458.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374.075-.149.037-.28-.019-.393-.056-.113-.504-1.214-.69-1.663-.181-.435-.366-.377-.504-.383-.131-.006-.28-.006-.429-.006-.149 0-.392.056-.598.28-.206.225-.785.767-.785 1.871 0 1.104.804 2.171.916 2.321.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.536.171 1.024.147 1.412.089.43-.066 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.206-.15-.43-.262"/></svg>
-    </a>
-    
+        <!-- Map -->
+        <div class="contact-map-col">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65787.25404910321!2d77.59607540954887!3d12.914038007118474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15107262d16f%3A0xba3813c787bc4c82!2sFashion%20Aurah!5e1!3m2!1sen!2sin!4v1775674364969!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Fashion Aurah on Google Maps"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-      <p>&copy; 2026 FashionAura. All Rights Reserved.</p>
-    </footer>
 
-    <script>
-      // Initialize Lucide icons
-      lucide.createIcons();
+  <!-- ═══════════════════════════════════════════════
+       FLOATING WHATSAPP
+  ═══════════════════════════════════════════════ -->
+  <a href="https://wa.me/919944725450" class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" id="wa-float">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112-.149.224-.579.73-.71.88-.131.149-.262.168-.486.056-.224-.112-.947-.349-1.804-1.113-.667-.595-1.117-1.329-1.248-1.554-.131-.225-.014-.346.099-.458.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374.075-.149.037-.28-.019-.393-.056-.113-.504-1.214-.69-1.663-.181-.435-.366-.377-.504-.383-.131-.006-.28-.006-.429-.006-.149 0-.392.056-.598.28-.206.225-.785.767-.785 1.871 0 1.104.804 2.171.916 2.321.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.536.171 1.024.147 1.412.089.43-.066 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.206-.15-.43-.262"/></svg>
+    <span class="wa-float-label">Chat with us</span>
+  </a>
 
-      // Hero Slider Logic
-      const slider = document.getElementById('heroSlider');
-      let currentSlide = 0;
-      let slides = slider.querySelectorAll('.slide');
-      let totalSlides = slides.length;
 
-      function nextSlide() {
-          currentSlide = (currentSlide + 1) % totalSlides;
-          slider.style.transform = `translateX(-${currentSlide * 100}%)`;
-      }
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="images/favicon.webp" alt="" width="28" height="28" aria-hidden="true" />
+        <span>Fashion<strong>Aurah</strong></span>
+      </div>
+      <p class="footer-address">218, 9th Main Rd, Sector 6, HSR Layout, Bengaluru — 560102</p>
+      <p class="footer-copy">© 2026 Fashion Aurah · All rights reserved</p>
+    </div>
+  </footer>
 
-      setInterval(nextSlide, 4000); // Change image every 4 seconds
 
-      // Show Next Group Logic
-      function showNextGroup(groupId, btn) {
-          const group = document.getElementById(groupId);
-          if (group) {
-              group.classList.remove('hidden');
-              btn.style.display = 'none'; // Hide current button
-              lucide.createIcons(); // Refresh icons if needed
-          }
-      }
+  <script>
+    // ── Sticky header shadow
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
 
-      // Mobile Menu Logic
-      const menuToggle = document.getElementById('menuToggle');
-      const menuClose = document.getElementById('menuClose');
-      const subNav = document.getElementById('subNav');
+    // ── Hero slider
+    const slides = document.querySelectorAll('.hero-slide');
+    let current = 0;
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 4500);
 
-      if (menuToggle && menuClose && subNav) {
-          menuToggle.addEventListener('click', () => {
-              subNav.classList.add('active');
-          });
+    // ── Mobile nav
+    const toggle = document.getElementById('menu-toggle');
+    const nav    = document.getElementById('main-nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
 
-          menuClose.addEventListener('click', () => {
-              subNav.classList.remove('active');
-          });
+    // ── Scroll-reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('revealed');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.trust-item, .gallery-item, .about-image, .about-text, .contact-info-col, .contact-map-col').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+  </script>
 
-          // Close menu when clicking links
-          const navLinks = subNav.querySelectorAll('a');
-          navLinks.forEach(link => {
-              link.addEventListener('click', () => {
-                  subNav.classList.remove('active');
-              });
-          });
-      }
-    </script>
-  </body>
-    <script src="js/gallery.js"></script>
-  </body>
+</body>
 </html>
